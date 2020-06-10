@@ -1,2 +1,5 @@
 environmental_variables.py
 *.pyc
+venv/
+.idea/
+.idea/*

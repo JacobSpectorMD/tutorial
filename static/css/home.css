@@ -1,5 +1,5 @@
 .Jacob > .user-name {color: #26a69a; font-weight: 550;}
-.Jacob > .message-text {font-family: "Trebuchet MS";}
+.Jacob > .message-text {font-family: "Trebuchet MS"; font-size: 1.1em;}
 
 .Greg > .user-name {}
 .Greg > .message-text {}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for pathologist in pathologists %}
+<span class="name">{{pathologist.name}} - {{pathologist.location}}</span><br>
+{{pathologist.specialty}}
+<br><br>
+{% endfor %}
+
+
+<button id="alert-button">Alert</button>
+
+<form method="post">
+{% csrf_token %}
+{{form.name.label}}{{form.name}}<br>
+{{form.specialty.label}}{{form.specialty}}<br>
+{{form.location.label}}{{form.location}}<br>
+<input type="submit" value="Submit">
+</form>
+
+{% endblock content %}

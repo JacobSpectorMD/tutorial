@@ -1,0 +1,66 @@
+.Jacob > .user-name {color: #26a69a; font-weight: 550;}
+.Jacob > .message-text {font-family: "Trebuchet MS";}
+
+.Greg > .user-name {}
+.Greg > .message-text {}
+
+.Reiri > .user-name {}
+.Reiri > .message-text {}
+
+.Dan > .user-name {}
+.Dan > .message-text {}
+
+.demo-card-wide.mdl-card {
+    width: 60%;
+    height: 80vh;
+}
+
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../assets/demos/welcome_card.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.message-div {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.mdl-card__supporting-text {
+    width: 100%; 
+    box-sizing: border-box; 
+    overflow-y: scroll; 
+    height: 100%;
+    
+}
+
+.demo-card-wide {display: grid; grid-template-rows: 1fr 3em;}
+#submit-button {color: #4db6ac; display: flex; align-items: center; height: 2em; margin-left: 0.5em;}
+
+.mdl-card__actions {
+    display: flex;
+    align-items: stretch;
+    font-size: 1em;
+    padding: 0.5em;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+#new-message-input {height: 2em;}
+#input-div {flex: 1;}
+#new-message-input {width: 100%;}
+
+body {overflow: hidden;}
+.message {margin-bottom: 0.25em; width: 100%;}
+
+.material-icons {
+    color: #26a69a;
+}
+
+.mdl-card__menu {
+    top: 2px;
+}

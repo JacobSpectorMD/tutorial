@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styles %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock styles %}
+
+{% block scripts %}
+    {{ block.super }}
+    <script src="{% static 'js/home.js' %}"></script>
+{% endblock scripts %}
+
+{% block content %}
+<form method="post">
+{% csrf_token %}
+<div class="message-div">
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text">
+        {% for message in messages %}
+            <div class="message {% if message.user %}{{message.user.name}}{% else %}Anonymous{% endif %}">
+                <span class="user-name">{% if message.user %}{{message.user.name}}{% else %}Anonymous{% endif %}: </span>
+                <span class="message-text">{{message.text}}</span>
+            </div>
+        {% endfor %}
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+
+
+        <div id="input-div"><input id="new-message-input" name="new-message-input"></div>
+        <div><button id="submit-button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" type="submit">
+            Submit Message
+        </button></div>
+      </div>
+            
+      <div class="mdl-card__menu">
+        <button id="reload" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" type="button">
+          <i class="material-icons">autorenew</i>
+        </button>
+      </div>
+    </div>
+</div>
+</form>
+
+{% endblock content %}

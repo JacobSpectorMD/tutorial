@@ -1,10 +1,10 @@
 .Jacob > .user-name {color: #26a69a; font-weight: 580;}
 .Jacob > .message-text {font-family: "Trebuchet MS"; font-size: 1.1em; color: #795548;}
 /* merge conflict jacob */
-.Greg > .user-name {color: indigo; font-weight: 610;}
+.Greg > .user-name {color: indigo; font-weight: 620;}
 .Greg > .message-text {}
 
-.Reiri > .user-name {color: lightskyblue; font-style:italic; text-shadow:navy; font-weight:610;}
+.Reiri > .user-name {color: lightskyblue; font-style:italic; text-shadow:navy; font-weight:620;}
 .Reiri > .message-text {font-family:"Courier New"}
 
 .Dan > .user-name {color: purple; font-weight: 610}

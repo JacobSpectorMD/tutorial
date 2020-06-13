@@ -4,8 +4,8 @@
 .Greg > .user-name {}
 .Greg > .message-text {}
 
-.Reiri > .user-name {}
-.Reiri > .message-text {}
+.Reiri > .user-name {color: lightskyblue}
+.Reiri > .message-text {font-family:"Courier New"}
 
 .Dan > .user-name {}
 .Dan > .message-text {}

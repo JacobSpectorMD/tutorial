@@ -7,7 +7,7 @@
 .Reiri > .user-name {color: lightskyblue}
 .Reiri > .message-text {font-family:"Courier New"}
 
-.Dan > .user-name {color: purple}
+.Dan > .user-name {color: purple; font-weight: 600}
 .Dan > .message-text {color: pink}
 
 .demo-card-wide.mdl-card {

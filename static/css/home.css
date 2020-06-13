@@ -7,8 +7,8 @@
 .Reiri > .user-name {}
 .Reiri > .message-text {}
 
-.Dan > .user-name {}
-.Dan > .message-text {}
+.Dan > .user-name {color: purple}
+.Dan > .message-text {color: pink}
 
 .demo-card-wide.mdl-card {
     width: 60%;
